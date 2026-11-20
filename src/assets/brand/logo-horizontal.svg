@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" role="img" aria-label="EDCAR AUTOTRONIC">
+  <rect width="64" height="64" rx="6" fill="#123B70"/>
+  <path d="M10 8h8M8 10v8M54 8h-8M56 10v8M10 56h8M8 54v-8M54 56h-8M56 54v-8" stroke="#EAF2FA" stroke-width="1.5" stroke-linecap="square" opacity="0.55"/>
+  <path d="M20 18h24M20 18v28M20 32h16M20 46h24" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="square"/>
+  <circle cx="40" cy="32" r="2.4" fill="#FFFFFF"/>
+  <path d="M46 29.5 51 32l-5 2.5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="miter"/>
+  <text x="80" y="32" fill="#123B70" font-family="Montserrat, Arial, sans-serif" font-size="26" font-weight="800">EDCAR</text>
+  <text x="80" y="50" fill="#2463A6" font-family="Montserrat, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="3.2">AUTOTRONIC</text>
+</svg>

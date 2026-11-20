@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #123b70;
+  --color-brand-dark: #0b1f3a;
+  --color-brand-mid: #2463a6;
+  --color-brand-light: #eaf2fa;
+  --color-surface: #f3f6fa;
+  --color-muted: #64748b;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #ffffff;
+  color: #0b1f3a;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+:focus-visible {
+  outline: 2px solid #2463a6;
+  outline-offset: 3px;
+}
+
+@layer components {
+  .btn {
+    display: inline-flex;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease, transform 160ms ease;
+  }
+
+  .btn:active {
+    transform: translateY(1px);
+  }
+
+  .btn-primary {
+    background: #123b70;
+    color: #ffffff;
+  }
+
+  .btn-primary:hover {
+    background: #0b1f3a;
+  }
+
+  .btn-secondary {
+    background: #ffffff;
+    color: #123b70;
+    border: 1px solid #123b70;
+  }
+
+  .btn-secondary:hover {
+    background: #eaf2fa;
+  }
+
+  .btn-on-dark {
+    background: #ffffff;
+    color: #123b70;
+  }
+
+  .btn-on-dark:hover {
+    background: #eaf2fa;
+  }
+
+  .btn-ghost-on-dark {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+  }
+
+  .btn-ghost-on-dark:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
