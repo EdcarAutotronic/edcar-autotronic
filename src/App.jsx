@@ -10,6 +10,7 @@ import JsonLd from './components/JsonLd'
 import Services from './components/Services'
 import Specialties from './components/Specialties'
 import WhatsAppButton from './components/WhatsAppButton'
+import Privacy from './components/Privacy'
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Gallery />
         <ContactCTA />
         <Contact />
+        <Privacy />
       </main>
       <Footer />
       <WhatsAppButton />

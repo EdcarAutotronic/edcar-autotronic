@@ -91,7 +91,10 @@ export default function Footer() {
       </Container>
       <div className="border-t border-white/10">
         <Container className="py-5 text-xs text-white/50">
-          © 2026 EDCAR AUTOTRONIC. Todos los derechos reservados.
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <span>© 2026 EDCAR AUTOTRONIC. Todos los derechos reservados.</span>
+            <a href="#privacidad" className="underline underline-offset-2 hover:text-white">Privacidad y uso del sitio</a>
+          </div>
         </Container>
       </div>
     </footer>

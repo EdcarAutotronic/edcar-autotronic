@@ -2,12 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-const repoName = 'edcar-autotronic'
-
-export default defineConfig({
-  base: '/edcar-autotronic/',
+// La ruta pública del repositorio EdcarAutotronic/edcar-autotronic.
+// GitHub Pages necesita /edcar-autotronic/; el servidor local utiliza /.
+export default defineConfig(({ command }) => ({
   plugins: [react(), tailwindcss()],
-  // GitHub Pages se sirve en /<repo>/. En local se usa "/".
-  // Sobrescribe con BASE_PATH=/otro-repo/ si el nombre del repositorio cambia.
-  base: process.env.BASE_PATH ?? (process.env.GITHUB_ACTIONS === 'true' ? `/${repoName}/` : '/'),
-})
+  base: command === 'serve' ? '/' : '/edcar-autotronic/',
+}))

@@ -27,14 +27,14 @@ export const business = {
   social: {
     instagram: 'https://www.instagram.com/edcarautotronic/',
     tiktok: 'https://www.tiktok.com/@edcar_autotronic',
-    facebook: 'https://www.facebook.com/people/Edcar-Autotronic-taller-multimarca/',
+    facebook: 'https://www.facebook.com/share/1J5VkBFQ5p/?mibextid=wwXIfr',
   },
   seo: {
     title: 'EDCAR AUTOTRONIC | Taller Automotriz Multimarca en Mixco',
     description:
       'Taller multimarca en Mixco con 30 años de experiencia, especializado en diagnóstico computarizado, inyección electrónica, mantenimiento y reparación de vehículos y motocicletas.',
     // Cuando exista dominio definitivo, completar para canonical y Open Graph.
-    siteUrl: '',
+    siteUrl: 'https://edcarautotronic.github.io/edcar-autotronic/',
   },
 }
 
